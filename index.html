@@ -13,36 +13,20 @@
         <h1>Password Generator</h1>
       </header>
       
-      <label id="output">Text to display:</label>
-<input type="range" id="slider" min="8" max="128" oninput="updateText(this.value)">
+      <label for="length">Password length:</label>
+      <input type="range" id="length" min="8" max="128" oninput="updateText(this.value)">
+      
+      <label for="chars">Include characters:</label>
+      <input type="text" id="chars">
 
-<script>
-          function updateText(value) {
-            document.getElementById("output").innerHTML = "Number of characters:" + value;
-          }
-</script>          
-        
-         
-          
-      </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
-    </div>
+     
+
+      <p id="charCount">Password length: 8 characters</p>
+      
+      <button id="generate">Generate password</button>
+      
+      <p id="output"></p>      
+   </div>
     <script src="script.js"></script>
   </body>
 </html>

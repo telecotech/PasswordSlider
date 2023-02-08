@@ -1,24 +1,17 @@
-
-var generateBtn = document.querySelector("#generate");
-
-
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-    output.innerHTML = this.value;
+document.getElementById("generate").addEventListener("click", function() {
+  let length = document.getElementById("length").value;
+  let chars = document.getElementById("chars").value;
+  let password = "";
+  
+  let possibleChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  if (chars) {
+    possibleChars += chars;
   }
+  
+  for (let i = 0; i < length; i++) {
+    password += possibleChars.charAt(Math.floor(Math.random() * possibleChars.length));
+  }
+  
+  document.getElementById("output").innerHTML = password;
+});
 
-
-
-
-generateBtn.addEventListener("click", writePassword);
