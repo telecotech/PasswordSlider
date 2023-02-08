@@ -12,7 +12,19 @@
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="slidecontainer">
+      
+      <label id="output">Text to display:</label>
+<input type="range" id="slider" min="8" max="128" oninput="updateText(this.value)">
+
+<script>
+          function updateText(value) {
+            document.getElementById("output").innerHTML = "Number of characters:" + value;
+          }
+</script>          
+        
+         
+          
+      </div>
       </div>
       <div class="card">
         <div class="card-header">
