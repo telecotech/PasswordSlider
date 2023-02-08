@@ -12,21 +12,29 @@
       <header>
         <h1>Password Generator</h1>
       </header>
-      
-      <label for="length">Password length:</label>
-      <input type="range" id="length" min="8" max="128" oninput="updateText(this.value)">
-      
-      <label for="chars">Include characters:</label>
-      <input type="text" id="chars">
-
      
+      <label for="length">Password length:</label>
+<input type="range" id="length" min="8" max="128">
 
-      <p id="charCount">Password length: 8 characters</p>
+<p id="charCount"></p>
+
+ <p>Include:</p>
+ <input type="checkbox" id="uppercase" checked>
+ <label for="uppercase">Uppercase letters</label><br>
+
+ <input type="checkbox" id="lowercase" checked>
+ <label for="lowercase">Lowercase letters</label><br>
+
+ <input type="checkbox" id="numbers" checked>
+ <label for="numbers">Numbers</label><br>
+
+ <input type="checkbox" id="symbols">
+ <label for="symbols">Symbols</label><br>
+
+ <button id="generateBtn">Generate Password</button>
+ <p id="password"></p>
       
-      <button id="generate">Generate password</button>
-      
-      <p id="output"></p>      
-   </div>
+     </div>
     <script src="script.js"></script>
   </body>
 </html>
