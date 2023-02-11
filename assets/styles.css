@@ -20,7 +20,7 @@ body {
 .body{
   background-image: url(/assets/images/the-matrix.jpg);
   background-repeat: none;
-  background-position: cover;
+  background-size:cover;
 }
 
 .wrapper {
@@ -30,19 +30,27 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(110, 90%, 27%);
-}
-
-.card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 1%, 29%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(110, 90%, 27%);
-  font-size: 17px;
+  color: hsl(127, 90%, 35%);
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+ 
+}
+
+
+
+
+
+.card {
+  background-color: hsl(0, 1%, 29%);
+  border-radius: 5px;
+  border-width: 1px;
+  color: hsl(127, 90%, 35%);
+  font-size: 18px;
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
@@ -53,7 +61,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #084c8f;
+  background: #e7e9eb;
   height: 2px;
 }
 
@@ -81,11 +89,9 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color:hsl(180, 4%, 5%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(127, 90%, 35%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -97,7 +103,7 @@ header {
 
 button[disabled] {
   cursor: default;
-  background: #c0c7cf;
+  background: #4f5152;
 }
 
 .float-right {
@@ -115,11 +121,13 @@ button[disabled] {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: hsl(127, 90%, 35%);
+  background-color: black;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px solid hsl(127, 90%, 35%);
   border-radius: 6px;
   resize: none;
   overflow: hidden;
