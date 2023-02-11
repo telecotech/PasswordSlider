@@ -17,6 +17,12 @@ body {
   background-color: #f9fbfd;
 }
 
+.body{
+  background-image: url(/assets/images/the-matrix.jpg);
+  background-repeat: none;
+  background-position: cover;
+}
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -27,8 +33,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
-  text-shadow: forestgreen 1px 0 10px; ;
+  color: hsl(110, 90%, 27%);
 }
 
 .card {
@@ -36,8 +41,9 @@ header {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  color: hsl(110, 90%, 27%);
+  font-size: 17px;
+  text-align: center;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
@@ -47,7 +53,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #084c8f;
   height: 2px;
 }
 
