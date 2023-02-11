@@ -28,6 +28,7 @@ header {
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
+  text-shadow: forestgreen 1px 0 10px; ;
 }
 
 .card {
