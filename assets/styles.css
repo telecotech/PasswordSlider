@@ -18,7 +18,7 @@ body {
 }
 
 .body{
-  background-image: url(./assets/images/matrix-background.jpg);
+  background-image: url('./assets/images/matrix-background.jpg');
   background-size:cover;
 }
 
